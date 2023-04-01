@@ -26,6 +26,7 @@ if [ $EUID != 0 ] ; then
     exit $?
 fi
 echo "Installing Audacious skin..."
+mkdir -p /usr/share/audacious/Skins
 cd /usr/share/audacious/Skins
 if [ -e Abluent ] ; then
     echo "  renamimg original Abluent directory to Abluent.$BAK"
